@@ -99,6 +99,39 @@
           }
         }
       }
+    },
+    "ngx-rm-custom-css": {
+      "projectType": "library",
+      "root": "projects/ngx-rm-custom-css",
+      "sourceRoot": "projects/ngx-rm-custom-css/src",
+      "prefix": "rm",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-rm-custom-css/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-rm-custom-css/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-rm-custom-css/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/ngx-rm-custom-css/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }

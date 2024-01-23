@@ -1,0 +1,29 @@
+.rm-button {
+  background-color:#0a0a23;
+  color: #fff;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 0;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 30px;
+  min-width: 120px;
+  opacity: 0.8;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.2;
+  transition: opacity 0.3s ease;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+   box-sizing: border-box;         /* Opera/IE 8+ */
+  }
+  
+  .rm-button:hover {
+    opacity: 1;
+  }
+  .disable{
+    pointer-events:none;
+    color:#8f8b8b;
+    background:#f3f3f3; 
+  }
